@@ -37,10 +37,17 @@ export class ForecastsService {
           timezone: 'Europe/London',
         },
       })
-      .pipe(map((res: AxiosResponse) => this.openMeteoToInternal(userId, res.data as OpenMeteoForecastsResult)));
+      .pipe(
+        map((res: AxiosResponse) =>
+          this.openMeteoToInternal(userId, res.data as OpenMeteoForecastsResult),
+        ),
+      );
   }
 
-  private openMeteoToInternal(userId: string, openMeteoData: OpenMeteoForecastsResult): ForecastsResult {
+  private openMeteoToInternal(
+    userId: string,
+    openMeteoData: OpenMeteoForecastsResult,
+  ): ForecastsResult {
     return {
       userId,
       forecast: {
