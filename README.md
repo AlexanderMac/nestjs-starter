@@ -1,4 +1,7 @@
 # nestjs-starter
+
+## WARNING :warning:: This repo is not maintained anymore.
+
 Boilerplate for creating Nest.js project.
 
 [![Build Status](https://github.com/AlexanderMac/nestjs-starter/workflows/CI/badge.svg)](https://github.com/AlexanderMac/nestjs-starter/actions?query=workflow%3ACI)
